@@ -3402,7 +3402,6 @@ img.u-pull-left {
  * ## about info
  * -------------------------------------------------------------------- */
 .about-info {
-    margin-right: 120px;
     --gutter    : 0;
     width       : 100%;
     align-items : center;
@@ -3412,6 +3411,7 @@ img.u-pull-left {
     object-fit     : cover;
     margin         : -80px;
     vertical-align : bottom;
+    size: 3000px 3000px;
 }
 
 .about-info__text {
