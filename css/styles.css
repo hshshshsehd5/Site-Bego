@@ -3411,12 +3411,34 @@ img.u-pull-left {
     object-fit     : cover;
     margin         : 0px;
     vertical-align : bottom;
+    z-index: 0;
 }
 
 .about-info__text {
     padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
     margin-left : -4rem;
 }
+
+.about-info__container {
+    position: relative; /* Create a stacking context */
+    overflow: hidden;   /* Clip the blurred background if it overflows */
+    padding: var(--vspace-3_5) 10vw var(--vspace-2) 0;
+    margin-left: -4rem;
+}
+
+/* Background Layer */
+.about-info__background {
+    border-radius: 50px;
+    margin-top: 65px;
+    margin-left: -80px;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background-color: #010A26;  /* Background color */
+    filter: blur(10px);         /* Apply the blur effect */
+    z-index: 0;                 /* Stay behind the text */
+}
+
 
 .about-info__text .text-pretitle {
     margin-bottom : var(--vspace-1);
