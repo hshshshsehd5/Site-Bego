@@ -3409,9 +3409,8 @@ img.u-pull-left {
 
 .about-info__pic {
     object-fit     : cover;
-    margin         : -80px;
+    margin         : 0px;
     vertical-align : bottom;
-    size: 3000px 3000px;
 }
 
 .about-info__text {
